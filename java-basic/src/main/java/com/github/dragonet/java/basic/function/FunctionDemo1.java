@@ -1,6 +1,11 @@
 package com.github.dragonet.java.basic.function;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @author xiaolong.qin
@@ -14,6 +19,20 @@ public class FunctionDemo1 {
         testCompose();
         System.out.println("-------------");
         testAndThen();
+        System.out.println("-------------");
+        test1();
+    }
+
+    public static void test1() {
+        List<Integer> param = new ArrayList<Integer>(Arrays.asList(1, 2, 3));
+        Stream<Integer> stream = param.stream().map(i -> {
+            i = i + 1;
+            System.out.println(i);
+            return i;
+        }).map(i -> i * i);
+        System.out.println("test1 before collect");
+        List<Integer> result = stream.collect(Collectors.toList());
+        System.out.println(result);
     }
 
     public static void testAndThen() {
