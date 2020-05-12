@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
+ * {@link Function} 使用学习
  * @author xiaolong.qin
  * @date 2020/4/30 4:33 下午
  **/
