@@ -11,5 +11,15 @@
 
     <artifactId>algorithm</artifactId>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.2</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
 
 </project>
